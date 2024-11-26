@@ -6,7 +6,9 @@ const TOK = `${T1}${T2}${T3}`;
 const URL_API = `https://api.telegram.org/bot${TOK}/sendMessage`;
 
 const feedbackFormBox = document.querySelector(".disp-none");
-const openFeedbackFormBtn = document.querySelector(".feedback_btn");
+const openFeedbackFormBtn = document.querySelectorAll(".feedback_btn");
+console.log(openFeedbackFormBtn);
+
 const successSendBox = document.querySelector(".success-send-box");
 const sendMsgBtn = document.querySelector("#tg");
 
@@ -59,6 +61,9 @@ async function sendMsgToTelegram(e) {
   }
 };
 
-openFeedbackFormBtn.addEventListener("click", toggleFeedbackForm);
+for (let i = 0; i < openFeedbackFormBtn.length; i++) {
+  openFeedbackFormBtn[i].addEventListener("click", toggleFeedbackForm);
+}
+
 feedbackFormBox.addEventListener("click", toggleFeedbackForm);
 sendMsgBtn.addEventListener("submit", sendMsgToTelegram);

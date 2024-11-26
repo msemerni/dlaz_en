@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lightToggleIcon.style.display = mode === 'light' ? 'block' : 'none';
     darkToggleIcon.style.display = mode === 'dark' ? 'block' : 'none';
 
-    const selectElement = document.querySelector('select');
+    const selectElement = document.querySelector('.theme-toggle-button');
     selectElement.classList.toggle('dark-mode', mode === 'dark');
     selectElement.classList.toggle('light-mode', mode === 'light');
   }
