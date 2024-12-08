@@ -3,11 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dlaz.online/</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://dlaz.online/"/>
+    <loc>https://dlaz.ca/</loc>
   </url>
  
 </urlset>
