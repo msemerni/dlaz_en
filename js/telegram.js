@@ -24,7 +24,7 @@ async function sendMsgToTelegram(e) {
   e.preventDefault();
 
   let message = `<tg-emoji emoji-id="5368324170671202286">👍</tg-emoji>\n`
-  message += `<code>D-Laz feedback</code>\n`;
+  message += `<code>D-Laz US</code>\n`;
   message += `<i>Name: </i><b>${this.tg_name.value}</b>\n`;
   message += `<i>Email: </i><b>${this.tg_email.value}</b>\n`;
   message += `<i>Phone: </i><b>${this.tg_phone.value}</b>\n`;

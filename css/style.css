@@ -207,62 +207,6 @@ img {
 .darkToggleIcon {
   color: #ffffff;
 }
-
-/* #endregion */
-
-/* #arrows animation */
-
-.arrows {
-  display: flex;
-  align-items: center;
-  align-content: space-between;
-}
-
-i::before {
-  margin-right: -10px;
-  font-size: 100px;
-  color: transparent;
-  -webkit-text-stroke: 0.8px #ffffff;
-  animation: glowing 1.2s reverse infinite ease-in-out;
-}
-
-i:nth-child(1)::before {
-  animation-delay: 0;
-}
-i:nth-child(2)::before {
-  animation-delay: 0.14s;
-}
-i:nth-child(3)::before {
-  animation-delay: 0.21s;
-}
-i:nth-child(4)::before {
-  animation-delay: 0.28s;
-}
-i:nth-child(5)::before {
-  animation-delay: 0.35s;
-}
-i:nth-child(6)::before {
-  animation-delay: 0.42s;
-}
-i:nth-child(7)::before {
-  animation-delay: 0.49s;
-}
-i:nth-child(8)::before {
-  animation-delay: 0.56s;
-}
-
-/* Let's Create Arrow Animation */
-@keyframes glowing {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 1px #ffffff)
-      drop-shadow(0 0 2px #ffff00) drop-shadow(0 0 3px #ffff00)
-      drop-shadow(0 0 4px #ffff00) drop-shadow(0 0 5px #ffff00);
-  }
-}
 /* #endregion */
 
 /* #region home */
